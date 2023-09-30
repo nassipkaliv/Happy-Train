@@ -1,0 +1,26 @@
+#financeflow {
+  width: 100%;
+  height: 1000px;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
+  display: flex;
+  justify-content: center;
+  background-image: url("../../../../assets/images/Группа 5.png");
+  background-size: 100% 100%;
+  background-position: center;
+  position: relative;
+    @media only screen and (max-width: 769px){
+    height: 350px;
+    background-image: url("../../../../assets/images/mobfinancialflow.png");
+    ;
+  }
+
+    @media only screen and (max-width: 1200px){
+    background-image: url("../../../../assets/images/mobfinancialflow.png");
+    height: 450px;
+    margin-top: -50px;
+  }
+}
+

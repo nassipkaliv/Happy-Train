@@ -1,0 +1,132 @@
+
+.clan-selection-container {
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.clan-selection-wrapper {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.clan-selection-header, .clan-selection-bottom {
+ position: relative;   
+background-color: #9f4491;
+width: 595px;
+ &::before,&::after{
+   content: '';
+   display: block;
+   position: absolute;
+   background-color:#9f4491;
+   z-index: -2;
+ }
+ &::before{
+   width: calc(100% + 26px);
+   height:calc(100% + 3px);
+   left: -13px;
+
+ }
+  &::after{
+   width: calc(100% + 16px);
+   height:calc(100% + 8px);
+   left: -8px;
+ }
+
+}
+.clan-selection-header{
+ height:59px;
+ display:flex;
+ justify-content: center;
+ align-items: center;
+ box-shadow: 0 -10px 0 0 #d95b9a;
+ h2{
+    margin:0px;
+    text-transform: uppercase;
+ }
+  &::before, &::after{
+   bottom: 0px;
+   box-shadow: 0 -10px 0 0 #3a1b4b,5px 0 0 0 #3a1b4b,-5px 0 0 0 #3a1b4b;
+ }
+
+}
+
+.clan-selection-bottom{
+ height:29px;
+&::before, &::after {
+   top: 0px;
+   box-shadow: 0 10px 0 0 #3a1b4b,5px 0 0 0 #3a1b4b,-5px 0 0 0 #3a1b4b;
+ }
+}
+
+.clan-selection-body {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap:30px;
+position: relative;
+height: 550px;
+width: 580px;
+background-color: #fa921f;
+border: 3px solid #3a1b4b;
+&::before{
+   content: '';
+   position: absolute;
+   top:0px;
+   width: 100%;
+   height: 10px;
+   background-color: #f46524;
+}
+}
+
+.clan-selctions{
+display:grid;
+grid-template-columns: repeat(2,220px);
+grid-template-rows: repeat(2,145px);
+gap: 50px;
+row-gap: 50px;
+justify-content: center;
+place-content: center;
+}
+
+.select-clan-container{
+   width: 220px;
+   height:145px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap:10px;
+   background-color: #f25a25;
+   cursor: pointer;
+
+   &:hover{
+      border: 2px solid #fcfaf9;
+   }
+   img{
+      max-width: 107px;
+   }
+   span{
+      text-transform: uppercase;
+   }
+}
+.clan-selection-button{
+   width: 256px;
+   height: 50px;
+   background-color: #82a92a;
+   box-shadow: 0 -3px 0 0 #bacf50,0 -6px 0 0 #242627,3px 0 0 0 #bacf50,6px 0 0 0 #242627,
+   -3px 0 0 0 #bacf50,-6px 0 0 0 #242627,0 3px 0 0 #6f941b,0 8px 0 0 #242627 ;
+   button{
+      border: none;
+      outline: none;
+      background-color: inherit;
+      width: 100%;
+      height:100%;
+      color:#e0eaca;
+      text-transform: uppercase;
+   }
+}

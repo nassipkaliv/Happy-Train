@@ -1,0 +1,35 @@
+.page-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.page {
+  display: flex;
+  flex: 1 auto;
+  width: 100%;
+  flex-direction: column;
+  height: 100%;
+}
+
+#header {
+  color: $white;
+  border-bottom: 4px solid rgba($white, .2);
+
+  .navbar-brand {
+    color: $white !important;
+  }
+
+  @include media-breakpoint-down(lg) {
+    min-height: 65px !important;
+    max-height: 65px !important;
+  }
+}
+
+#page-content {
+  flex: 1 auto;
+  overflow: scroll;
+}
+
+#footer {
+}

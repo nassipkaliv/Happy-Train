@@ -1,0 +1,97 @@
+#sidebar {
+  flex: 1 auto;
+  min-width: 270px;
+  background-color: $cyan;
+  border-right: 4px solid rgba($white, .2);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    width: 220px;
+    margin: 0 auto;
+    @include media-breakpoint-down(lg) {
+      width: 80px;
+      margin-bottom: 20px;
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    position: fixed;
+    z-index: 100;
+    overflow: scroll;
+    top: 65px;
+    left: -100%;
+    width: 100%;
+    height: calc(100% - 65px);
+    transition: all .4s;
+
+    &.is-open {
+      left: 0;
+    }
+  }
+}
+
+#sidebar-nav {
+  .btn {
+    text-transform: uppercase;
+    display: block;
+    width: 160px;
+    text-align: center;
+    margin: 0 auto 1.5rem;
+  }
+}
+
+#sidebar-socials {
+  $main-color: darken($cyan, 15%);
+  width: 100%;
+  padding: 10px 30px;
+  background-color: $main-color;
+  color: $cyan;
+  position: relative;
+
+  .socials-list {
+    margin-bottom: 1rem;
+    img {
+      width: 50px;
+    }
+  }
+
+  &:before,
+  &:after,
+  span:before,
+  span:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: $main-color;
+    width: 100%;
+    left: 0;
+
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+  }
+
+  &:before {
+    height: 10px;
+    top: -12px;
+  }
+
+  &:after {
+    height: 5px;
+    top: -19px;
+  }
+
+  span:before {
+    height: 4px;
+    top: -25px;
+  }
+
+  span:after {
+    height: 2px;
+    top: -29px;
+  }
+}

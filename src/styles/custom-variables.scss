@@ -1,0 +1,66 @@
+$font-family-sans-serif: "Press Start 2P", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-size-base: .85rem;
+
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+$pink: #c9285d;
+$green: #0b7e61;
+$orange: #dd6f00;
+$yellow: #ffe3a6;
+$cyan: #5da8bd;
+$blue: #232541;
+
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$red:     #dc3545;
+$teal:    #20c997;
+
+$primary: #2a466d;
+$secondary:     $gray-600;
+$success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-100;
+$dark:          $gray-900;
+
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark,
+  "pink":       $pink,
+  "cyan":       $cyan,
+  "orange":     $orange,
+);
+
+$body-bg: #0e113e;
+$body-color: #fff;
+$modal-content-bg: $body-bg;
+$modal-content-color: $body-color;
+$modal-content-border-color: $body-color;
+$modal-content-border-width: 2px;
+
+$enable-shadows: true;
+
+$border-radius: 0;
+$border-radius-sm: 0;
+$border-radius-lg: 0;
+
+$btn-border-width: 3px;
+$btn-close-color: #fff;

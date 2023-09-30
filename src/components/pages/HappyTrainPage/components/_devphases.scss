@@ -1,0 +1,36 @@
+#devphases {
+  width: 100%;
+  height: 650px;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
+  display: flex;
+  z-index: 100;
+  justify-content: center;
+  background-image: url("../../../../assets/images/Группа 2.png");
+  background-size: 100% 100%;
+  background-position: center;
+  position: relative;
+  margin-top: -70px;
+  margin-bottom: -30px;
+  @media only screen and (max-width: 769px){
+    height: 300px;
+    background-image: url("../../../../assets/images/mobdevphases.png");
+  }
+    @media only screen and (max-width: 1200px){
+    background-image: url("../../../../assets/images/mobdevphases.png");
+  }
+}
+
+
+.gif {
+  display: flex;
+  height: auto;
+}
+
+.gif img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}

@@ -1,0 +1,111 @@
+{
+  "home": {
+    "connect": "Connect wallet and start",
+    "login": "Login"
+  },
+  "register": {
+    "title": "Registration",
+    "subtitle": "activate account in one transaction with BNB",
+    "have-upline": "I have a upline",
+    "upline-address-and-id": "Your upline address and ID",
+    "upline-address": "Upline address:",
+    "approve-upline": "Approve upline",
+    "terms": "You take all the responsibility for you actions. By interacting with the smart contract, you agree to the rules of the game and understand that all blockchain transactions are irrevocable.",
+    "confirm": "Confirm registration"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "my-personal": "My personal",
+    "link": "link"
+  },
+  "promo": {
+    "title": "Promo"
+  },
+  "statistics": {
+    "title": "Statistics",
+    "total-users": "Total users",
+    "total-transactions": "Total transactions",
+    "total-turnover": "Total turnover"
+  },
+  "support": {
+    "nav": "Support",
+    "title": "You can contact us on:"
+  },
+  "bonus": {
+    "title": "Bonus",
+    "table-title": "Bonus activities"
+  },
+  "tower": {
+    "tower-of-user": "Tower of user ID %user",
+    "my-tower": "My tower",
+    "buy-floor": "Buy floor",
+    "buy-floor-for-bnb": "Buy floor %floor for %price BNB?",
+    "available-in": "Available in",
+    "available-for-building": "Available for building",
+    "not-available": "Not available",
+    "not-available-alert": "Please build or repair previous floors",
+    "build": "build",
+    "rent-payments": "rent payments",
+    "partner-bonus": "partner bonus",
+    "floor-profits": "floor profits",
+    "emergency-state": "Emergency state",
+    "renovate": "renovate",
+    "strengthen": "strengthen"
+  },
+  "search": {
+    "title": "Search user"
+  },
+  "table": {
+    "BuyLevel": "Build %floor floor",
+    "LevelPayout": "Got %rewardValue BNB rent payment for %floor floor. From",
+    "LevelDeactivation": "%floor floor has fallen into disrepair",
+    "IncreaseLevelMaxPayouts": "%floor floor fortified. New max rent payments is %newMaxPayouts",
+    "UserRegistration": "New partner registered",
+    "ReferralPayout": "Got %rewardValue BNB partner bonus from %floor floor. Partner",
+    "MissedReferralPayout": "Miss %rewardValue BNB partner bonus from %floor floor. Partner",
+    "first-line": "First Line",
+    "reward": "Reward",
+    "load-more": "Load more"
+  },
+  "common": {
+    "id": "ID",
+    "invited": "invited",
+    "by": "by",
+    "of": "of",
+    "copy": "Copy",
+    "close": "Close",
+    "search": "Search",
+    "buy": "Buy",
+    "floor": "Floor",
+    "loading": "Loading",
+    "balance": "Balance",
+    "partners": "Partners",
+    "tower-profit": "Tower profit",
+    "referral-payouts": "Referral payouts",
+    "missed-referral-payouts": "Missed referral payouts",
+    "referral-id": "Referral ID",
+    "user": "User",
+    "user-id": "User ID",
+    "back-to-account": "Back to my account",
+    "sign-out": "Sign Out"
+  },
+  "alert": {
+    "copied": "Copied!",
+    "transaction-loading": "Waiting for transaction complete",
+    "registration-loading": "Waiting for registration complete",
+    "registration-complete": "You've successfully registered",
+    "registration-error": "Error. Registration failed",
+    "user-search-loading": "Searching...",
+    "user-search-complete": "User found!",
+    "user-search-error": "User not found",
+    "buy-floor-complete": "You've successfully bought floor"
+  },
+  "error": {
+    "default": "Error. Try again",
+    "approve-upline": "You need to approve your upline",
+    "no-web3": "Your browser doesn't support Web3 or you don't have Web3 extension installed.",
+    "user-id-not-found": "Error. User with this ID is not found",
+    "not-found": "Not found",
+    "enter-user-id": "Enter user ID"
+  }
+}

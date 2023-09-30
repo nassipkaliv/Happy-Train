@@ -1,0 +1,29 @@
+#footer {
+  width: 100%;
+  height: 200px;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
+  display: flex;
+  justify-content: center;
+  background-image: url("../../../../assets/images/Footer.png");
+  background-size: 100% 100%;
+  background-position: center;
+  position: relative;
+  @media only screen and (max-width: 769px){
+    height: 100px;
+    background-image: url("../../../../assets/images/Footer.png");
+  }
+    @media only screen and (max-width: 1200px){
+    background-image: url("../../../../assets/images/Footer.png");
+  }
+}
+
+#footer button {
+  margin-top: 20px;
+  margin-right: 10px;
+  background: none;
+  border: none;
+}
+

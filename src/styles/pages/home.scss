@@ -1,0 +1,26 @@
+#home {
+  width: 100%;
+  height: 900vh;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
+  background-image: url("../../assets/images/main-page.png");
+  background-size: 100% 100%;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+  @media only screen and (max-width: 769px){
+    height: 500vh;
+    background-image: url("../../assets/images/mobile.png");
+  }
+    @media only screen and (max-width: 1200px){
+    background-image: url("../../assets/images/IPAD.png");
+  }
+}
+.connect-button{
+position: fixed;
+top:0px;
+right:10px;
+}
+

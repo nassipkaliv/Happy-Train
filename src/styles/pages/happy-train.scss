@@ -1,0 +1,272 @@
+
+#happy-train-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  #ruler {
+    width: 100px;
+    position: relative;
+    //position: absolute;
+    //top: 50%;
+    //transform: translateY(-50%);
+    padding-left: 8px;
+
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 0;
+      left: -4px;
+      width: 4px;
+      height: 100%;
+      background: $white;
+    }
+
+    .ruler-level {
+      position: relative;
+      font-size: .8em;
+      padding-top: 5px;
+      padding-bottom: 2px;
+
+      span {
+        opacity: 0;
+        margin-left: 10px;
+        transition: all .4s;
+        cursor: default;
+      }
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 15px;
+        height: 4px;
+        background: $white;
+        transition: all .4s;
+      }
+
+      &.active {
+        span {
+          opacity: 1;
+          margin-left: 0;
+        }
+
+        &:before {
+          width: calc(100% - 10px);
+        }
+      }
+    }
+  }
+
+  #happy-train-building {
+    height: 100%;
+    overflow: scroll;
+    padding: 30px 0;
+
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+
+    .building-level {
+      position: relative;
+      margin-bottom: 0;
+
+      .level-number {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        span {
+          color: $white;
+          background-color: rgba($black, .3);
+          font-size: 1.25em;
+          padding: 5px;
+          opacity: 0;
+          transition: all .4s;
+        }
+      }
+
+      &:hover {
+        .level-number {
+          span {
+            opacity: 1;
+          }
+        }
+      }
+
+      &.active {
+        position: relative;
+
+        &:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: url('../../assets/images/levels/floor_frame.png') center center no-repeat;
+          background-size: cover;
+          z-index: 10;
+        }
+      }
+    }
+  }
+
+  #happy-train-statistics {
+    position: relative;
+    align-self: flex-end;
+    margin: auto auto 0;
+    padding-bottom: 80px;
+    max-width: 420px;
+
+    @include media-breakpoint-down(lg) {
+      max-width: 90%;
+    }
+
+    .card {
+      margin: 0 auto;
+
+      .card-body {
+        position: relative;
+
+        .activation-times {
+          position: absolute;
+          background: $cyan;
+          width: 50px;
+          height: 25px;
+          padding-top: 5px;
+          top: 2px;
+          left: 50%;
+          margin-left: -25px;
+          color: $white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 10;
+
+          &:before,
+          &:after {
+            content: '';
+            position: absolute;
+            background: $cyan;
+            height: 3px;
+            bottom: -3px;
+            left: 3px;
+            width: 44px;
+          }
+
+          &:after {
+            bottom: -6px;
+            left: 6px;
+            width: 38px;
+          }
+        }
+
+        .rent-progress {
+          display: inline-block;
+          position: relative;
+          margin: 10px auto 20px;
+          width: 295px;
+          height: 22px;
+          background: url('../../assets/images/progress-bg.png') center center no-repeat;
+          text-align: center;
+          color: $white;
+          text-shadow: 1px 1px $primary, -1px -1px $primary, 1px -1px $primary, -1px 1px $primary;
+
+          @include media-breakpoint-down(lg) {
+            background: $primary;
+            width: 100%;
+            height: 22px;
+          }
+
+          span.progress-bg.desktop {
+            position: absolute;
+            width: 285px;
+            height: 14px;
+            left: 5px;
+            top: 4px;
+            background: url('../../assets/images/progress-line.png') no-repeat;
+            transition: all .4s;
+            @include media-breakpoint-down(lg) {
+              display: none;
+            }
+          }
+
+          span.progress-bg.mobile {
+            position: absolute;
+            width: 0;
+            height: 14px;
+            left: 5px;
+            top: 4px;
+            background: #92DB44;
+            transition: all .4s;
+            @include media-breakpoint-up(lg) {
+              display: none;
+            }
+          }
+
+          span.progress-value {
+            z-index: 2;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            font-size: .9em;
+            top: 2px;
+          }
+        }
+
+        .rent-payments {
+          border: solid 4px $white;
+          padding: 0 20px;
+          position: relative;
+          color: $cyan;
+          font-size: 1.8em;
+          display: inline-block;
+          margin: 25px auto 10px;
+
+          span {
+            display: block;
+            margin-top: -17px;
+            color: $white;
+            font-size: .8rem;
+            background-color: darken($cyan, 15%);
+            padding: 5px;
+          }
+        }
+      }
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      margin-left: -100px;
+      width: 200px;
+      height: 80px;
+      background: url('../../assets/images/levels/base.png') center bottom no-repeat;
+      background-size: cover;
+      z-index: -3;
+    }
+
+    #level-switcher {
+    }
+  }
+}
